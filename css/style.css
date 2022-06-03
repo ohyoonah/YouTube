@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/*헤더*/
+header {
+  height: 100px;
+  margin: 10px;
+}
+
+.logo {
+  margin: 20px;
+  float: left;
+}
+
+.account {
+  margin: 20px;
+  float: right;
+}
+
+/*비디오*/
+.player {
+  clear: both;
+  margin: 10px;
+}
+
+.player video {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/*비디오 정보*/
+.info {
+  margin: 10px;
+}
+
+.hashTags ul li {
+  list-style: none;
+  float: left;
+}
+
+.hashTags ul li a {
+  text-decoration: none;
+}
+
+.videoTitle {
+  clear: both;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.viewCount {
+  margin-top: 20px;
+}
+
+.actionBtn {
+  margin-top: 30px;
+  display: flex;
+}
+
+.chanelInfo {
+  margin-top: 30px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding: 30px;
+}
+
+.profile {
+  float: left;
+  height: auto;
+  line-height: 50px;
+  margin-right: 30px;
+}
+
+.subScribe {
+  float: right;
+}
+
+.subScribe button {
+  width: 100px;
+  height: 40px;
+  background: red;
+  text-align: center;
+  color: #fff;
+}
+
+/*재생목록*/
+.nextList {
+  clear: both;
+  margin: 10px;
+}
+
+.nextVideo {
+  margin-top: 10px;
+}
+
+.nextImage img {
+  float: left;
+  width: 30%;
+  margin-right: 20px;
+}
+
+.nextTitle {
+  font-weight: bolder;
+}
