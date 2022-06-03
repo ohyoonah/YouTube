@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+
+  <script 
+    src="https://kit.fontawesome.com/d86f326fcd.js" 
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <!--헤더-->
+  <header>
+    <!--로고-->
+    <div class="logo">
+      <!--유튜브 로고 아이콘-->
+      <i class="fab fa-youtube"></i>
+      <!--유튜브 타이틀-->
+      <span class="mainTitle">YouTube</span>
+    </div>
+    <!--계정-->
+    <div class="account">
+      <!--검색 아이콘-->
+      <i class="fas fa-search"></i>
+      <!--유저 아이콘-->
+      <i class="fas fa-circle-user"></i>
+    </div>
+  </header>
+
+  <!--비디오-->
+  <section class="player">
+    <video src="/video/video.mp4" controls></video>
+    <!--<iframe src="https://www.youtube.com/embed/5_2htTpUhG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+  </section>
+
+  <!--비디오 정보-->
+  <div class="info">
+    <!--비디오 데이터-->
+    <div class="metaData">
+      <!--해시태그-->
+      <ul class="hassTags">
+        <li><a href="#">#클론코딩</a></li>
+        <li><a href="#">#유튜브</a></li>
+      </ul>
+      <!--비디오 제목-->
+      <span class="videoTitle">클론코딩 유튜브 사이트 따라하기!!</span>
+      <!--비디오 조회수 및 업로드 날짜-->
+      <span class="viewCount">조회수123,456회 2022.06.03</span>
+    </div>
+    <!--액션 버튼-->
+    <div class="actionBtn">
+      <button class="good">100
+        <i class="fas fa-thumbs-up"></i>
+      </button>
+      <button class="bad">싫어요
+        <i class="fas fa-thumbs-down"></i>
+      </button>
+      <button class="share">공유
+        <i class="fas fa-share"></i>
+      </button>
+      <button class="save">오프라인 저장
+        <i class="fas fa-arrow-down-to-arc"></i>
+      </button>
+      <button class="clip">클립
+        <i class="fas fa-scissors"></i>
+      </button>
+    </div>
+    <!--채널 정보-->
+    <div class="chanelInfo">
+      <span class="profile">
+        <i class="fas fa-circle-user"></i>
+      </span>
+      <span class="profileName">오윤아</span>
+      <span class="profileViewr">구독자 20만명</span>
+      <button class="subscribe">구독</button>
+    </div>
+
+    <!--재생목록-->
+    <div class="nextList">
+      <span class="nextText">다음 영상</span>
+      <span class="nextImage">
+        <img src="/image/lemon.jpg">
+      </span>
+      <span class="nextTitle">열심히 따라해보자..</span>
+      <span class="nextName">오윤아</span>
+      <span class="nextViewCount">10회 2022.06.03</span>
+    </div>
+  </div>
+</body>
+</html>
