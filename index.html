@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 
   <script 
     src="https://kit.fontawesome.com/d86f326fcd.js" 
@@ -39,20 +40,21 @@
   </section>
 
   <!--비디오 정보-->
-  <div class="info">
+  <section class="info">
     <!--비디오 데이터-->
     <div class="metaData">
       <!--해시태그-->
-      <div class="hashTags">
-        <ul>
+      <ul class="hashTags">
           <li><a href="#">#클론코딩</a></li>
           <li><a href="#">#유튜브</a></li>
-        </ul>
+      </ul>
+      <div class="titleAndBtn">
+        <!--비디오 제목-->
+        <span class="videoTitle">클론코딩 유튜브 사이트 따라하기!!</span>
+        <!--비디오 조회수 및 업로드 날짜-->
+        <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
       </div>
-      <!--비디오 제목-->
-      <div class="videoTitle">클론코딩 유튜브 사이트 따라하기!!</div>
-      <!--비디오 조회수 및 업로드 날짜-->
-      <div class="viewCount">조회수123,456회 2022.06.03</div>
+      <span class="viewCount">조회수123,456회 2022.06.03</span>
     </div>
     <!--액션 버튼-->
     <div class="actionBtn">
@@ -69,7 +71,7 @@
         공유
       </button>
       <button class="save">
-        <i class="fas fa-arrow-down-to-arc"></i>
+        <i class="fas fa-plus"></i>
         오프라인 저장
       </button>
       <button class="clip">
@@ -80,29 +82,48 @@
     <!--채널 정보-->
     <div class="chanelInfo">
       <div class="profile">
-        <i class="fas fa-circle-user"></i>
+        <img src="/image/logo2.png">
+        <div class="infoData">
+          <span class="profileName">오윤아</span>
+          <span class="profileViewer">구독자 20만명</span>
+        </div>
       </div>
-      <div class="profileName">오윤아</div>
-      <div class="profileViewr">구독자 20만명</div>
-      <div class="subScribe">
-        <button>구독</button>
-      </div>
+      <button class="subScribe">구독</button>
     </div>
+  </section>
 
     <!--재생목록-->
-    <div class="nextList">
-      <div class="nextText">다음 영상</div>
-      <div class="nextVideo">
-        <div class="nextImage">
-          <img src="/image/lemon.jpg">
+  <section class="nextList">
+    <span class="nextText">다음 영상</span>
+    <ul>
+      <li class="nextItem">
+        <img src="/image/lemon.jpg" alt="썸네일">
+        <div class="info">
+          <span class="nextTitle">열심히 따라해보자..</span>
+          <span class="nextName">오윤아</span>
+          <span class="nextViewCount">10회 2022.06.03</span>
         </div>
-        <div class="nextInfo">
-          <div class="nextTitle">열심히 따라해보자..</div>
-          <div class="nextName">오윤아</div>
-          <div class="nextViewCount">10회 2022.06.03</div>
+      </li>
+        <button class="nextMore"><i class="fas fa-ellipsis-v"></i></button>
+      <li class="nextItem">
+        <img src="/image/lemon.jpg" alt="썸네일">
+        <div class="info">
+          <span class="nextTitle">열심히 따라해보자..</span>
+          <span class="nextName">오윤아</span>
+          <span class="nextViewCount">10회 2022.06.03</span>
         </div>
-      </div>
-    </div>
-  </div>
+        <button class="nextMore"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="nextItem">
+        <img src="/image/lemon.jpg" alt="썸네일">
+        <div class="info">
+          <span class="nextTitle">열심히 따라해보자..</span>
+          <span class="nextName">오윤아</span>
+          <span class="nextViewCount">10회 2022.06.03</span>
+        </div>
+        <button class="nextMore"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
