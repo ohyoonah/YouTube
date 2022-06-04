@@ -9,7 +9,7 @@
 
   /* 사이즈 */
   --padding: 12px;
-  --profile-size: 36px;
+  --profile-size: 40px;
 
   /* 폰트 사이즈 */
   --font-large: 18px;
@@ -46,13 +46,20 @@ header {
   height: 50px;
 }
 
-.logo i {
+.logo .fa-youtube {
   color: var(--red-color);
+  font-size: 30px;
 }
 
 .logo .mainTitle {
   font-size: var(--font-large);
   font-weight: bolder;
+  margin-left: cla(var(--padding) / 2);
+}
+
+.account {
+  font-size: 20px;
+  color: var(--black-color);
 }
 
 .account .fa-search {
@@ -184,14 +191,42 @@ color: var(--grey-dark-color);
 
 /*재생목록*/
 .nextList {
+  padding: var(--padding);
 }
 
-.nextVideo {
+.nextList .nextText{
+  font-size: var(--font-medium);
 }
 
-.nextImage img {
+.nextItem {
+  display: flex;
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+
+.nextItem img {
+  width: 160px;
+  height: 100px;
+}
+
+.nextInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--padding);
+  padding: 5px 0;
 }
 
 .nextTitle {
+  font-size: var(--font-medium);
+  margin-bottom: 30px;
 }
 
+.nextName,
+.nextViewCount {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.nextMore {
+  margin-left: 100px;
+}
