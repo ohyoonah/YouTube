@@ -46,6 +46,15 @@ header {
   height: 50px;
 }
 
+.logo {
+  display: flex;
+}
+
+.logo button {
+  margin-right: var(--padding);
+  font-size: 15px;
+}
+
 .logo .fa-youtube {
   color: var(--red-color);
   font-size: 30px;
@@ -54,7 +63,8 @@ header {
 .logo .mainTitle {
   font-size: var(--font-large);
   font-weight: bolder;
-  margin-left: cla(var(--padding) / 2);
+  margin-left: 5px;
+  margin-top: 3px;
 }
 
 .account {
@@ -79,6 +89,27 @@ header {
   height: 100%;
   max-width: 1000px;
   max-height: 300px;
+}
+
+/*비디오 정보 & 재생 목록*/
+.infoAndnextList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndnextList {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+
+  .info {
+    flex: 1 1 45%;
+  }
+
+  .nextList {
+    flex: 1 1 45%;
+  }
 }
 
 /*비디오 정보*/
@@ -152,7 +183,7 @@ color: var(--grey-dark-color);
   justify-content: space-between;
   border: solid 1px var(--grey-light-color);
   border-radius: 3px;
-  padding: var(--padding);
+  padding: 10px;
 }
 
 .profile {
@@ -188,6 +219,50 @@ color: var(--grey-dark-color);
   border-radius: 5px;
 }
 
+/*댓글*/
+.comments {
+  display: flex;
+  border: solid 1px var(--grey-light-color);
+  border-radius: 3px;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.commentTxt {
+  flex: 10%;
+  font-size: var(--font-medium);
+  padding: 0 7px;
+  border-right: solid 1px var(--grey-light-color);
+}
+
+.add {
+  flex: 80%;
+  display: flex;
+  margin-left: var(--padding);
+  width: 100%;
+}
+
+.add i {
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.add input {
+  margin-top: 3px;
+  margin-left: var(--padding);
+  background-color: var(--grey-light-color);
+  border: none;
+  border-radius: 3px;
+  height: 80%;
+  width: 300px;
+}
+
+.plusBtn {
+  flex: 5%;
+  font-size: 15px;
+  color: var(--grey-dark-color);
+}
+
 
 /*재생목록*/
 .nextList {
@@ -196,17 +271,20 @@ color: var(--grey-dark-color);
 
 .nextList .nextText{
   font-size: var(--font-medium);
+  color: var(--grey-dark-color);
 }
 
 .nextItem {
   display: flex;
   margin-top: var(--padding);
-  margin-bottom: var(--padding);
 }
 
-.nextItem img {
-  width: 160px;
-  height: 100px;
+.nextItem .img {
+  flex: 1 1 35%;
+}
+
+.nextItem .img img {
+  width: 100%;
 }
 
 .nextInfo {
@@ -214,6 +292,7 @@ color: var(--grey-dark-color);
   flex-direction: column;
   margin-left: var(--padding);
   padding: 5px 0;
+  flex: 1 1 60%;
 }
 
 .nextTitle {
@@ -228,5 +307,5 @@ color: var(--grey-dark-color);
 }
 
 .nextMore {
-  margin-left: 100px;
+  flex: 1 1 5%;
 }
